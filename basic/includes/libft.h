@@ -6,7 +6,7 @@
 /*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 12:15:38 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/02/26 15:25:22 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/04/01 17:55:52 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 
 # include <string.h>
+# include "get_next_line.h"
+# include "../../includes/ft_printf.h"
 
 typedef	struct	s_list
 {
@@ -85,4 +87,5 @@ void			ft_lstinsert(t_list **alst, t_list *new);
 char			*ft_itoa_base(long long int n, int base);
 int				ft_atoi_base(const char *str, int base);
 int				ft_abs(int nb);
+
 #endif
