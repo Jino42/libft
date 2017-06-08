@@ -6,7 +6,7 @@
 /*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 17:54:21 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/02/13 11:46:37 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/06/08 02:01:04 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ static	t_lst	*find_init(t_lst *lst, int fd)
 
 	if (lst == NULL)
 	{
-		lst = (t_lst*)malloc(sizeof(t_lst));
+		if (!(lst = (t_lst*)ft_memalloc(sizeof(t_lst))))
+			exit(0);
 		lst->temp = NULL;
 		lst->deb = lst;
 		lst->next = NULL;

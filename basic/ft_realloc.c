@@ -6,7 +6,7 @@
 /*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 20:08:58 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/02/26 18:46:25 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/06/08 02:02:55 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ void	*ft_memrealloc(void *ptr, size_t size_old, size_t size_new)
 {
 	void	*new_ptr;
 
-	new_ptr = (void*)malloc(size_new);
+	if (!(new_ptr = (void*)ft_memalloc(size_new)))
+		return (NULL);
 	if (new_ptr == NULL)
 		return (NULL);
 	if (ptr)

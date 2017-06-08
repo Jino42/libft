@@ -6,7 +6,7 @@
 /*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 17:58:26 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/02/13 18:15:18 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/06/08 02:00:45 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,8 @@ char		**ft_strsplit(char const *s, char c)
 		return (NULL);
 	i = 0;
 	b = count_word((char*)s, c);
-	str = (char**)malloc(sizeof(*str) * (b + 1));
+	if (!(str = (char**)ft_memalloc(sizeof(*str) * (b + 1))))
+		return (NULL);
 	if (str == NULL)
 		return (NULL);
 	while (b)

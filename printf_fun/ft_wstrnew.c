@@ -6,7 +6,7 @@
 /*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/15 19:24:25 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/01/15 19:26:16 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/06/08 02:02:40 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ wchar_t		*ft_wstrnew(size_t size)
 	wchar_t	*str;
 	size_t	i;
 
-	str = (wchar_t*)malloc(sizeof(*str) * size + 1);
+	if (!(str = (wchar_t*)ft_memalloc(sizeof(*str) * size + 1)))
+		exit(0);
 	if (!str)
 		return (NULL);
 	i = 0;
