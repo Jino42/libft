@@ -6,7 +6,7 @@
 #    By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/02 18:45:43 by ntoniolo          #+#    #+#              #
-#    Updated: 2017/09/12 16:56:13 by ntoniolo         ###   ########.fr        #
+#    Updated: 2017/09/12 16:57:29 by ntoniolo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -157,11 +157,11 @@ $(OBJ_DIR) :
 
 clean:
 	@echo "Clean libft"
-	@/bin/rm -f $(OBJET)
+	@/bin/rm -rf $(OBJ_DIR)
 
 fclean:
 	@echo "fClean libft"
-	@/bin/rm -f $(OBJET)
+	@/bin/rm -rf $(OBJ_DIR)
 	@/bin/rm -f $(NAME)
 
 re: fclean all
