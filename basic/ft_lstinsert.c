@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstinsert.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/02 17:01:19 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/02/21 12:03:13 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:24:39 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 void	ft_lstinsert(t_list **alst, t_list *new)
 {

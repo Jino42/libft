@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putbuffer.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/15 19:33:18 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/08/03 05:32:02 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:34:09 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 void	ft_putbufferchar(char c, t_option *option)
 {

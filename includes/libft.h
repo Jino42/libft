@@ -3,19 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 12:15:38 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/09/12 16:10:20 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:29:26 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdlib.h>
+# include <unistd.h>
 # include <string.h>
 # include "get_next_line.h"
-# include "../../includes/ft_printf.h"
+# include "ft_printf.h"
 
 typedef	struct	s_list
 {

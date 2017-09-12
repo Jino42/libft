@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putwstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/15 17:26:47 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/01/15 17:27:14 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:34:45 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/printf_fun.h"
+#include "ft_printf.h"
 
 void	ft_putwstr(wchar_t *str)
 {

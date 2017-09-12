@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_dotoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/16 20:08:58 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/01/18 13:12:36 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:34:53 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/printf_fun.h"
+#include "ft_printf.h"
 
 static char	*ft_cases_dotoa(char *str, int len, double nb)
 {

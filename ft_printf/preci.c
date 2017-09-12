@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sc_preci.c                                         :+:      :+:    :+:   */
+/*   preci.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/17 20:27:12 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/01/18 12:44:42 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:34:07 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 static int	other_cases(char *str, t_option *option)
 {

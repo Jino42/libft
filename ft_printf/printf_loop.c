@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   printf_loop.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/24 14:54:56 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/08/03 04:40:51 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:34:05 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 static void		init_struct(t_option *option)
 {

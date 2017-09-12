@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 17:58:26 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/06/08 02:00:45 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:28:25 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "libft.h"
 
 static	int	count_word(char *str, char c)
 {

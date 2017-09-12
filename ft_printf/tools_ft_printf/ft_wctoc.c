@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_wctoc.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/15 17:56:21 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/01/17 17:47:50 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:34:34 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/printf_fun.h"
+#include "ft_printf.h"
 
 static unsigned char	ft_save(wchar_t c, int shl, int shr, int mask)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   write_f.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/17 20:46:21 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/01/17 23:43:45 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:33:58 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 static char	*assemblage(t_option *option)
 {

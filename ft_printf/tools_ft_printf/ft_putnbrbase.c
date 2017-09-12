@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbrbase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/13 17:21:29 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/01/17 17:44:41 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:34:49 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/printf_fun.h"
+#include "ft_printf.h"
 
 void	ft_putnbrbase(int n, int base)
 {

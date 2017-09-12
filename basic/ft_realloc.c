@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_realloc.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/12 20:08:58 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/06/24 14:32:57 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:26:36 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memrealloc(void *ptr, size_t size_old, size_t size_new)
 {

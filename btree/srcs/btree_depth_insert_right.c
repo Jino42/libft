@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   btree_depth_insert_right.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/12 10:19:50 by ntoniolo          #+#    #+#             */
-/*   Updated: 2016/11/22 20:02:33 by ntoniolo         ###   ########.fr       */
+/*   Created: 2017/08/10 00:52:34 by ntoniolo          #+#    #+#             */
+/*   Updated: 2017/08/10 00:58:25 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "btree.h"
 
-# include "libft.h"
-# define BUFF_SIZE 100
-
-typedef struct	s_lst
+void	btree_depth_insert_right(t_btree *node, void *item)
 {
-	int				fd;
-	char			*temp;
-	char			*cara;
-	struct s_lst	*next;
-	struct s_lst	*deb;
-}				t_lst;
+	t_btree *tmp;
 
-int				get_next_line(const int fd, char **line);
-
-#endif
+	if (!node)
+		btree_create_leaf(item);
+	else
+	{
+		tmp = node;
+		while (btree_child_right(tmp))
+			tmp = btree_child_right(tmp);
+		tmp->right = btree_create_leaf(item);
+	}
+}

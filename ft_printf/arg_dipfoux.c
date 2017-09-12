@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   arg_dipfoux.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/17 20:51:08 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/01/18 13:23:21 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:34:22 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 void	mod_uox(char *str, t_option *option)
 {

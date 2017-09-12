@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isin.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/16 15:29:34 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/09/12 16:12:43 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:24:04 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 int		ft_isin(char *str, char c)
 {

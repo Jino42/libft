@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_wstrlen.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/15 19:16:23 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/01/17 17:43:39 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:34:32 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/printf_fun.h"
+#include "ft_printf.h"
 
 size_t	ft_wstrlen(const wchar_t *str)
 {

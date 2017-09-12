@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   write_width.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/18 17:06:06 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/01/18 12:44:46 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:33:53 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 int		can_i_write_width(char *str, t_option *option)
 {

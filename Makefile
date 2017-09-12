@@ -3,16 +3,24 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/02 18:45:43 by ntoniolo          #+#    #+#              #
-#    Updated: 2017/09/12 16:13:44 by ntoniolo         ###   ########.fr        #
+#    Updated: 2017/09/12 16:56:13 by ntoniolo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-FLAGS = -Wall -Werror -Wextra -g
+CC = gcc
+
+CFLAGS = -Wall -Werror -Wextra -g
+
+INC_FILES = includes/btree.h includes/libft.h includes/get_next_line.h includes/ft_printf.h
+
+INC = includes/
+
+OBJ_DIR = objs/
 
 SRC = basic/ft_memset.c \
 	  basic/ft_bzero.c \
@@ -104,30 +112,56 @@ SRC = basic/ft_memset.c \
 	  ft_printf/tools_ft_printf/ft_wstrnew.c \
 	  ft_printf/tools_ft_printf/ft_wstrsub.c \
 	  ft_printf/tools_ft_printf/ft_strjoinfree.c \
-	  ft_printf/tools_ft_printf/ft_dotoa.c
+	  ft_printf/tools_ft_printf/ft_dotoa.c \
+	  btree/srcs/btree_create_node.c \
+	  btree/srcs/btree_create_leaf.c \
+	  btree/srcs/btree_child_left.c \
+	  btree/srcs/btree_child_right.c \
+	  btree/srcs/btree_is_leaf.c \
+	  btree/srcs/btree_is_empty.c \
+	  btree/srcs/btree_size.c \
+	  btree/srcs/btree_insert_right.c \
+	  btree/srcs/btree_insert_left.c \
+	  btree/srcs/btree_delete_right.c \
+	  btree/srcs/btree_delete_left.c \
+	  btree/srcs/btree_depth_insert_right.c \
+	  btree/srcs/btree_depth_insert_left.c \
+	  btree/srcs/btree_apply_prefix.c \
+	  btree/srcs/btree_apply_infix.c \
+	  btree/srcs/btree_apply_suffix.c \
+	  btree/srcs/btree_apply_free.c \
+	  btree/srcs/btree_insert_data.c \
+	  btree/srcs/btree_search_item.c \
+	  btree/srcs/btree_insert_infix_data.c \
+	  btree/srcs/btree_ul_insert_infix_data.c \
 
 OBJET = $(SRC:.c=.o)
 
+#.PHONY de $(NAME) = Pas de message, car Verification
 .PHONY: all, clean, fclean, re
 
 all: $(NAME)
 
-$(NAME): $(OBJET)
-	@ar rc $(NAME) $(OBJET) && ranlib $(NAME)
+$(NAME): $(OBJ_DIR) $(OBJET)
+	@ar rc $(NAME) $(addprefix $(OBJ_DIR), $(OBJET)) && ranlib $(NAME)
 
-start :
+$(OBJ_DIR) :
+	mkdir $(OBJ_DIR)
+	mkdir $(OBJ_DIR)btree
+	mkdir $(OBJ_DIR)btree/srcs
+	mkdir $(OBJ_DIR)ft_printf
+	mkdir $(OBJ_DIR)ft_printf/tools_ft_printf
 
-end :
-
-%.o: %.c
-	gcc $(FLAGS) -o $@ -c $^
+%.o: %.c $(INC_FILES)
+	$(CC) $(CFLAGS) -I ./$(INC) -o $(OBJ_DIR)$@ -c $<
 
 clean:
-	@echo "Delete .o"
+	@echo "Clean libft"
 	@/bin/rm -f $(OBJET)
 
-fclean: clean
-	@echo "Delete .o & .a"
+fclean:
+	@echo "fClean libft"
+	@/bin/rm -f $(OBJET)
 	@/bin/rm -f $(NAME)
 
 re: fclean all
