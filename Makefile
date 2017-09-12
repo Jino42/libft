@@ -6,7 +6,7 @@
 #    By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/02 18:45:43 by ntoniolo          #+#    #+#              #
-#    Updated: 2017/09/12 17:04:59 by ntoniolo         ###   ########.fr        #
+#    Updated: 2017/09/12 17:26:34 by ntoniolo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -142,7 +142,7 @@ OBJET = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ_DIR) $(OBJET)
+$(NAME): $(OBJ_DIR) $(addprefix $(OBJ_DIR), $(OBJET))
 	@ar rc $(NAME) $(addprefix $(OBJ_DIR), $(OBJET)) && ranlib $(NAME)
 
 $(OBJ_DIR) :
@@ -153,8 +153,8 @@ $(OBJ_DIR) :
 	mkdir $(OBJ_DIR)ft_printf
 	mkdir $(OBJ_DIR)ft_printf/tools_ft_printf
 
-%.o: %.c $(INC_FILES)
-	$(CC) $(CFLAGS) -I ./$(INC) -o $(OBJ_DIR)$@ -c $<
+$(OBJ_DIR)%.o: %.c $(INC_FILES)
+	$(CC) $(CFLAGS) -I ./$(INC) -o $@ -c $<
 
 clean:
 	@echo "Clean libft"
