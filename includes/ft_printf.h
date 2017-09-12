@@ -6,7 +6,7 @@
 /*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/13 17:19:30 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/02/13 00:14:38 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/09/12 16:15:00 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include "../basic/includes/libft.h"
 # include <stdlib.h>
 # include <stdarg.h>
-# include "../printf_fun/includes/printf_fun.h"
+# include "../ft_printf/tools_ft_printf/includes/printf_fun.h"
 
 # define DIESE	0
 # define MOINS	1
@@ -34,7 +34,9 @@
 # define MOD_LL	6
 # define MOD_LLL 7
 
-# define BUFF_SIZE_P 10
+# define FLAG_S (1 << 1)
+
+# define BUFF_SIZE_P 300
 
 typedef struct	s_option
 {
@@ -54,16 +56,26 @@ typedef struct	s_option
 	int				sign;
 	char			*final;
 	int				final_len;
+	int				sub_word;
+	int				fd;
+	char			*sbuffer;
+	int				flag;
 	int				b;
 	char			buffer[BUFF_SIZE_P];
-	int				sub_word;
 }				t_option;
 
 int				ft_printf(char *str, ...);
-int				check_flags(char *str, t_option *option);
+int				ft_dprintf(int fd, char *str, ...);
+char			*ft_sprintf(char *str, ...);
+
+void			printf_loop(char *str, t_option *option);
+
 void			ft_putbuffer(t_option *option);
 void			ft_putbufferchar(char c, t_option *option);
+void			ft_reallocbuffer(t_option *option);
+void			ft_reallocbufferchar(char c, t_option *option);
 
+int				check_flags(char *str, t_option *option);
 int				sc_c(char *str, t_option *option);
 int				sc_s(char *str, t_option *option);
 int				dipfoux(char *str, t_option *option);
