@@ -6,7 +6,7 @@
 #    By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/02 18:45:43 by ntoniolo          #+#    #+#              #
-#    Updated: 2017/09/12 16:57:29 by ntoniolo         ###   ########.fr        #
+#    Updated: 2017/09/12 17:04:59 by ntoniolo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -147,6 +147,7 @@ $(NAME): $(OBJ_DIR) $(OBJET)
 
 $(OBJ_DIR) :
 	mkdir $(OBJ_DIR)
+	mkdir $(OBJ_DIR)basic
 	mkdir $(OBJ_DIR)btree
 	mkdir $(OBJ_DIR)btree/srcs
 	mkdir $(OBJ_DIR)ft_printf
