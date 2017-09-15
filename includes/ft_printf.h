@@ -17,6 +17,7 @@
 # include <locale.h>
 # include <stdarg.h>
 
+# include <stdint.h>
 # define DIESE	0
 # define MOINS	1
 # define PLUS	2
