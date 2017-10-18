@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   btree.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/09 18:02:25 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/08/17 10:14:45 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/10/18 15:25:54 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void			btree_depth_insert_left(t_btree *node, void *item);
 void			btree_apply_prefix(t_btree *node, void (*apply)(void *));
 void			btree_apply_infix(t_btree *node, void (*apply)(void *));
 void			btree_apply_suffix(t_btree *node, void (*apply)(void *));
+void			btree_env_apply_infix(void *env, t_btree *node, void (*apply)(void *, void *));
 
 void			btree_apply_free(t_btree *node, void (*apply)(void *));
 
@@ -58,5 +59,7 @@ void			btree_insert_infix_data(t_btree **root, void *item,
 		int (*cmpf)(void *, void*));
 void			btree_ul_insert_infix_data(t_btree **root, void *item,
 		size_t (*cmpf)(void *, void*));
+void			btree_finsert_infix_data(t_btree **root, void *item,
+		float (*cmpf)(void *, void *));
 
 #endif

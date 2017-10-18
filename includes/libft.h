@@ -6,7 +6,7 @@
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 12:15:38 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/09/12 20:25:41 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/10/18 15:20:14 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <string.h>
 # include "get_next_line.h"
 # include "ft_printf.h"
+# include "btree.h"
 
 typedef	struct	s_list
 {
