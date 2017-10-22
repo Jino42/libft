@@ -6,13 +6,14 @@
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 02:11:04 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/10/18 15:27:09 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/10/21 21:36:17 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "btree.h"
 
-void	btree_env_apply_infix(void *env, t_btree *node, void (*apply)(void *, void *))
+void	btree_env_apply_infix(void *env, t_btree *node,
+											void (*apply)(void *, void *))
 {
 	if (btree_child_left(node))
 		btree_env_apply_infix(env, btree_child_left(node), apply);
