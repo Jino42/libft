@@ -6,7 +6,7 @@
 #    By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/02 18:45:43 by ntoniolo          #+#    #+#              #
-#    Updated: 2017/10/18 15:26:38 by ntoniolo         ###   ########.fr        #
+#    Updated: 2017/11/08 14:22:31 by ntoniolo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,6 +75,7 @@ SRC = basic/ft_memset.c \
 	  basic/ft_putnbr_fd.c \
 	  basic/ft_lstnew.c \
 	  basic/ft_lstdelone.c \
+	  basic/ft_lstlen.c \
 	  basic/ft_lstdel.c \
 	  basic/ft_lstadd.c \
 	  basic/ft_lstiter.c \
