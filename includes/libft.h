@@ -6,7 +6,7 @@
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 12:15:38 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/11/12 18:09:19 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/11/12 18:12:24 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ typedef	struct	s_list
 }				t_list;
 
 int				ft_atoi(const char *nptr);
-int				ft_faequal(float nb);
+int				ft_faequal(float a, float b);
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isalnum(int c);

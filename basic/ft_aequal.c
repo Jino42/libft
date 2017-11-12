@@ -6,22 +6,22 @@
 /*   By: ntoniolo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/12 18:07:00 by ntoniolo          #+#    #+#             */
-/*   Updated: 2017/11/12 18:09:42 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2017/11/12 18:12:09 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_faequal(float nb)
+int			ft_faequal(float a, float b)
 {
-	if (nb < 0)
+	if (a - b < 0)
 	{
-		if (nb * -1 < 0.00005)
+		if ((a - b) * -1 < 0.00005)
 			return (1);
 		else
 			return (0);
 	}
-	if (nb < 0.00005)
+	if ((a - b) < 0.00005)
 		return (1);
 	return (0);
 }
