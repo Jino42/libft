@@ -6,7 +6,7 @@
 #    By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/02 18:45:43 by ntoniolo          #+#    #+#              #
-#    Updated: 2017/11/12 18:29:11 by ntoniolo         ###   ########.fr        #
+#    Updated: 2017/11/13 21:24:46 by ntoniolo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,6 +53,7 @@ SRC = basic/ft_memset.c \
 	  basic/ft_tolower.c \
 	  basic/ft_memalloc.c \
 	  basic/ft_memdel.c \
+	  basic/ft_memcpy_offset.c \
 	  basic/ft_strnew.c \
 	  basic/ft_strdel.c \
 	  basic/ft_strclr.c \
