@@ -6,7 +6,7 @@
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 12:15:38 by ntoniolo          #+#    #+#             */
-/*   Updated: 2018/07/06 12:56:16 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2018/07/06 16:50:47 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int				ft_isalnum(int c);
 int				ft_isprint(int c);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
+void			*ft_memnew(void *ptr, size_t mem_size);
 int				ft_isascii(int c);
 size_t			ft_strlen (const char *s);
 char			*ft_strcpy(char *dest, const char *src);
