@@ -6,7 +6,7 @@
 #    By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/02 18:45:43 by ntoniolo          #+#    #+#              #
-#    Updated: 2018/07/06 12:58:42 by ntoniolo         ###   ########.fr        #
+#    Updated: 2018/07/06 16:51:51 by ntoniolo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,7 @@ OBJ_DIR = objs/
 SRC = basic/ft_memset.c \
 	  basic/ft_bzero.c \
 	  basic/ft_memcpy.c \
+	  basic/ft_memnew.c \
 	  basic/ft_memccpy.c \
 	  basic/ft_memmove.c \
 	  basic/ft_memchr.c \
