@@ -6,7 +6,7 @@
 #    By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/02 18:45:43 by ntoniolo          #+#    #+#              #
-#    Updated: 2017/11/13 21:24:46 by ntoniolo         ###   ########.fr        #
+#    Updated: 2018/07/06 12:58:42 by ntoniolo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -140,7 +140,7 @@ SRC = basic/ft_memset.c \
 	  btree/srcs/btree_ul_insert_infix_data.c \
 	  btree/srcs/btree_finsert_infix_data.c \
 	  btree/srcs/btree_env_apply_infix.c \
-	  
+
 
 OBJET = $(SRC:.c=.o)
 
