@@ -6,7 +6,7 @@
 /*   By: ntoniolo <ntoniolo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 12:15:38 by ntoniolo          #+#    #+#             */
-/*   Updated: 2018/07/06 16:50:47 by ntoniolo         ###   ########.fr       */
+/*   Updated: 2018/07/08 00:25:34 by ntoniolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,8 @@ char			*ft_strnstr(const char *big, const char *little, size_t len);
 void			*ft_memset (void *s, int c, size_t n);
 void			ft_bzero(void *s, size_t n);
 void			*ft_memcpy(void *dest, const void *src, size_t n);
-bool			ft_error(char *string, bool (*func)(void *gen), void *gen);
+bool			ft_bool_error(char *string, bool (*func)(void *gen), void *gen);
+void			*ft_error(char *string, void *(*func)(void *gen), void *gen);
 int				ft_ret_error(char *str);
 void			*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void			*ft_memcpy_offset(void *dest, const void *src,
